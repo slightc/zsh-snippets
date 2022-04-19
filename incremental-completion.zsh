@@ -37,7 +37,7 @@ function limit-completion
 		zle -M ""
 	elif ((compstate[list_lines] > 6)); then
 		compstate[list]=""
-		zle -M "too many matches."
+		zle -M "..."
 	fi
 }
 
